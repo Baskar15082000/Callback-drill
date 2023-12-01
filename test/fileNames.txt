@@ -1,3 +1,3 @@
-newFile_1.txt
-newFile_2.txt
-newFile_3.txt
+Upper.txt
+lower.txt
+sort.txt
