@@ -17,7 +17,7 @@ function fsProblem2() {
         console.error(err);
       } else {
         console.log("newFile_1.txt ctreated");
-        fs.writeFile("fileNames.txt", "newFile_1.txt", (err, data) => {
+        fs.writeFile("fileNames.txt", "newFile_1.txt", (err) => {
           if (err) {
             console.error(err);
           } else {
@@ -25,7 +25,7 @@ function fsProblem2() {
             readFile("newFile_1.txt", function (data1) {
               const lower = data1.toLowerCase();
               const sentence = lower.replaceAll(".", ".\n");
-              fs.writeFile("newFile_2.txt", sentence, (err, data) => {
+              fs.writeFile("newFile_2.txt", sentence, (err) => {
                 if (err) {
                   console.error(err);
                 } else {
@@ -41,7 +41,7 @@ function fsProblem2() {
                         readFile("newFile_2.txt", function (data2) {
                           const sort = data2.split(".").sort().join("");
 
-                          fs.writeFile("newFile_3.txt", sort, (err, data4) => {
+                          fs.writeFile("newFile_3.txt", sort, (err) => {
                             if (err) {
                               console.error(err);
                             } else {
